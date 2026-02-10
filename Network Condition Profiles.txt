@@ -1,0 +1,17 @@
+# Network Condition Profiles
+# ID   RTT     JITTER   PACKET_LOSS
+
+C01  0ms     0ms      0%
+C02  25ms    10ms     0%
+C03  25ms    40ms     0%
+C04  50ms    10ms     0%
+C05  50ms    40ms     0%
+C06  100ms   10ms     0%
+C07  100ms   40ms     0%
+C08  25ms    0ms      1%
+C09  25ms    0ms      4%
+C10  50ms    0ms      1%
+C11  50ms    0ms      4%
+C12  100ms   0ms      1%
+C13  100ms   0ms      4%
+C14  100ms   40ms     4%
