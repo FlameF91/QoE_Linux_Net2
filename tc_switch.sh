@@ -54,7 +54,10 @@ read_profiles() {
     declare -gA PROFILE_JITTER
     declare -gA PROFILE_LOSS
 
-    while IFS= read -r line; do
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        # 去除 Windows 换行符中的 \r
+        line=$(echo "$line" | tr -d '\r')
+
         # 跳过注释行和空行
         [[ "$line" =~ ^[[:space:]]*# ]] && continue
         [[ -z "$(echo "$line" | tr -d '[:space:]')" ]] && continue
